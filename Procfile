@@ -1,1 +1,1 @@
-web: python model_flask.py
+web: python model_flask.py runserver
