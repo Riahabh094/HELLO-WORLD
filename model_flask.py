@@ -36,10 +36,10 @@ def p():
 
 if(__name__ == "__main__"):
     
-    try:
-         port = int(sys.argv[1]) # This is for a command-line input
-    except:
-        port = 12345 # If you don't provide any port the port will be set to 12345
+#     try:
+#          port = int(sys.argv[1]) # This is for a command-line input
+#     except:
+#         port = 12345 # If you don't provide any port the port will be set to 12345
 
     rf = joblib.load("model.pkl") # Load "model.pkl"
     print ('Models loaded')
@@ -49,7 +49,7 @@ if(__name__ == "__main__"):
     print ('Models columns loaded')
     print(model_columns)
 
-    app.run(port=port, debug=True)
+    app.run(host='0.0.0.0', port=80)
 
 
     
