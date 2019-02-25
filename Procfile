@@ -1,1 +1,1 @@
-web: gunicorn app:server
+web: python model_flask.py
